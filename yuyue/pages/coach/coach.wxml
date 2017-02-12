@@ -1,0 +1,8 @@
+<import src="/pages/coach/template/coach-template.wxml" />
+
+<!--pages/coach/coach.wxml-->
+<view class="container">
+  <block wx:for="{{coachList}}">
+    <template is="coach-template" data="{{...item}}" />
+  </block>
+</view>

@@ -1,0 +1,11 @@
+<template name="coach-template">
+  <view catchtap="onCoachTap" data-id="{{id}}" class="coach-container">
+    <image class="avatar" src="{{avatar}}"></image>
+    <view class="intro-container">
+      <text class="name">{{name}}</text>
+      <text class="intro">{{intro}}</text>
+    </view>
+    <!--<image class="arrow-right-img" src="/images/icon/arrow-right.png" />-->
+    <text class="arrow-right-img">></text>
+  </view>
+</template>

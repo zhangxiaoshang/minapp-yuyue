@@ -1,0 +1,8 @@
+/**app.wxss**/
+page{
+  background-color: #b3d4db;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}

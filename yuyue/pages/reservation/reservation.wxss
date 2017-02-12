@@ -1,0 +1,88 @@
+/* pages/reservation/reservation.wxss */
+
+.coach-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+.avatar {
+  margin: 20rpx;
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.name {
+  line-height: 160rpx;
+}
+
+.hr {
+  margin: 10rpx auto 0;
+  width: 95%;
+  height: 1px;
+  background-color: #d1d1d1;
+}
+
+.summary {
+  margin: 0 20rpx;
+  font-family: MicroSoft Yahei;
+  font-size: 24rpx;
+  color: #666;
+  letter-spacing: 2px;
+  line-height: 28rpx;
+}
+
+.date-view {
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 0;
+  width: 100%;
+  height: auto;
+  white-space: nowrap;
+  border-bottom: 2px solid #666;
+}
+
+.date-container {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 20rpx 0;
+  padding: 0 20rpx;  
+  font-family: MicroSoft Yahei;
+  color: #333;
+  border-right: 1px solid #d1d1d1;
+  text-align: center;
+}
+
+.week {
+  font-size: 32rpx;
+  margin-bottom: 10rpx;
+}
+
+.date {
+  font-size: 28rpx;
+}
+.time-view {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+}
+.time-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.time-container text {
+  padding: 20rpx 25rpx;
+  border: 1px solid #d1d1d1;
+}
+
+.submit-btn {
+    margin-top: 80rpx;
+    width: 60%;
+}
+.chosed {
+  background-color: #d1d1d1;
+}

@@ -1,0 +1,2 @@
+/* pages/coach/coach.wxss */
+@import "./template/coach-template.wxss";

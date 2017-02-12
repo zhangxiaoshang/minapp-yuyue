@@ -1,0 +1,42 @@
+
+<!--pages/reservation/reservation.wxml-->
+<view class="container">
+  <view class="coach-container">
+    <image class="avatar" src="{{coach.avatar}}"></image>
+    <view class="name">
+      <text>{{coach.name}}</text>
+    </view>
+  </view>
+  <view class="hr" />
+  <text class="summary">
+  {{coach.summary}}
+  </text>
+  <!-- 日期-->
+  <scroll-view scroll-x="true" class="date-view">
+    <block wx:for="{{dates}}">
+      <view wx:if="{{item.chosed}}" class="date-container chosed" catchtap="onDateTap" data-idx="{{index}}" data-week="{{item.week}}" data-date="{{item.date}}">
+        <text class="week">{{item.week}}</text>
+        <text class="date">{{item.date}}</text>
+      </view>
+      <view wx:else class="date-container" catchtap="onDateTap" data-idx="{{index}}" data-week="{{item.week}}" data-date="{{item.date}}">
+        <text class="week">{{item.week}}</text>
+        <text class="date">{{item.date}}</text>
+      </view>
+    </block>
+  </scroll-view>
+
+  <!-- 时间段-->
+  <view class="time-view">
+  <view class="time-container">
+      <text>上午</text>
+      <text catchtap="onTimeTap" data-slot="上午" data-time="08:00-10:00" style="{{am1BackGround}}">08:00-10:00</text>
+      <text catchtap="onTimeTap" data-slot="上午" data-time="10:00-12:00" style="{{am2BackGround}}">10:00-12:00</text>
+    </view>
+    <view class="time-container">
+      <text>下午</text>
+      <text catchtap="onTimeTap" data-slot="下午" data-time="14:00-16:00" style="{{pm1BackGround}}">14:00-16:00</text>
+      <text catchtap="onTimeTap" data-slot="下午" data-time="16:00-18:00" style="{{pm2BackGround}}">16:00-18:00</text>
+    </view>
+  </view>
+  <button catchtap="onButtonTap" type="primary" class="submit-btn">完成预约</button>
+</view>

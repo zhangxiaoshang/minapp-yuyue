@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150rpx;
+}
+.coach-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 40rpx;
+    border-bottom: 1px solid #d1d1d1;
+}
+.avatar {
+    width: 112rpx;
+    height: 112rpx;
+    margin: 20rpx;
+}
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20rpx;
+    width: 500rpx;
+}
+.name {
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+    font-size: 32rpx;
+}
+.intro {
+    font-size: 28rpx;
+}
+
+.arrow-right-img{
+    width: 35rpx;
+    height: 35rpx;
+    margin-top: 56rpx;
+    color: #666;
+    font-size: 32rpx;
+    font-weight: blod;
+}
